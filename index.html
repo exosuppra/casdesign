@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="fr" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cas'Design — Pascal Casani, dessinateur · infographiste à Sisteron</title>
+<meta name="description" content="Plans, permis de construire, modélisation 3D et images de synthèse à Sisteron (04). Pascal Casani dessine votre projet de construction, d'extension ou de rénovation, du premier trait à la dernière lumière.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#1b202c">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Cas'Design — Du premier trait à la dernière lumière">
+<meta property="og:description" content="Plans, modélisation 3D et images de synthèse. Pascal Casani, dessinateur · infographiste à Sisteron.">
+<meta property="og:image" content="assets/img/og.jpg">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Archivo:wdth,wght@100..125,300..700&family=Fraunces:ital,opsz,wght@0,9..144,300..500;1,9..144,300..500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>document.documentElement.className = 'js';</script>
+</head>
+<body>
+
+<!-- ============ LOADER ============ -->
+<div class="loader" aria-hidden="true">
+  <div class="loader__top">
+    <span>Cas'Design</span>
+    <span>Planche 00 — Ouverture</span>
+  </div>
+  <div class="loader__mid">
+    <svg class="loader__house" viewBox="0 0 640 220" fill="none">
+      <path class="loader__ground" d="M0 190H640"/>
+      <path class="loader__draw" d="M70 190V112L196 62L322 112V190M322 124L352 112L470 68L588 112V190M110 190V140H150V190M212 150H272V190M392 138H432V172H392ZM488 138H548V190"/>
+    </svg>
+  </div>
+  <div class="loader__bottom">
+    <span class="loader__status">Relevé</span>
+    <span class="loader__pct"><b>0</b><i>%</i></span>
+  </div>
+</div>
+
+<div class="cursor" aria-hidden="true"><i class="cursor__h"></i><i class="cursor__v"></i><span class="cursor__dot"></span><span class="cursor__label"></span></div>
+<div class="grain" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"><span class="progress__bar"></span></div>
+<div class="hud" aria-hidden="true"><span>X&nbsp;<b class="hud__x">0000</b></span><span>Y&nbsp;<b class="hud__y">0000</b></span><i></i><span class="hud__sec">00 · Ouverture</span></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <a class="nav__logo" href="#top" aria-label="Cas'Design — retour en haut">
+    <svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="54"/><path class="c" d="M54 39C36 33 24 49 24 62c0 16 15 28 32 20"/><path class="d" d="M63 30v58M63 32c36-2 38 54 0 56"/></svg>
+    <span>Cas'Design</span>
+  </a>
+  <nav class="nav__links" aria-label="Navigation principale">
+    <a href="#prestations">Prestations</a>
+    <a href="#planches">Planches</a>
+    <a href="#lumiere">Lumière</a>
+    <a href="#demarche">Démarche</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="nav__right">
+    <a class="btn btn--terra btn--sm" href="#contact" data-magnetic>
+      <span class="btn__label">Votre projet</span>
+      <span class="btn__icon"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </a>
+    <button class="nav__burger" aria-label="Ouvrir le menu" aria-expanded="false"><i></i><i></i></button>
+  </div>
+</header>
+
+<div class="menu" aria-hidden="true">
+  <nav class="menu__links">
+    <a href="#prestations"><small>01</small>Prestations</a>
+    <a href="#planches"><small>02</small>Planches</a>
+    <a href="#lumiere"><small>03</small>Lumière</a>
+    <a href="#demarche"><small>04</small>Démarche</a>
+    <a href="#contact"><small>05</small>Contact</a>
+  </nav>
+  <div class="menu__foot">
+    <a href="tel:+33628681417">06 28 68 14 17</a>
+    <a href="mailto:contact@casdesign.fr">contact@casdesign.fr</a>
+  </div>
+</div>
+
+<main id="top">
+
+<!-- ============ HERO — the plan becomes a house ============ -->
+<section class="hero" data-sec="01 · Du trait à la matière">
+  <div class="hero__pin">
+    <div class="hero__grid" aria-hidden="true"></div>
+    <div class="hero__sand" aria-hidden="true"></div>
+
+    <div class="film" data-film="hero" aria-hidden="true">
+      <canvas class="film__canvas" width="1920" height="1080"></canvas>
+      <svg class="film__dims" viewBox="0 0 1920 1080" preserveAspectRatio="none">
+        <g class="dim" data-a="w0" data-b="w1" data-off="46"><path class="dim__l"/><path class="dim__t"/><text>11,30</text></g>
+        <g class="dim" data-a="m1" data-b="m2" data-off="46"><path class="dim__l"/><path class="dim__t"/><text>10,20</text></g>
+        <g class="dim" data-a="m3" data-b="m2" data-off="-46"><path class="dim__l"/><path class="dim__t"/><text>14,00</text></g>
+      </svg>
+      <div class="film__tags">
+        <span class="tag" data-anchor="faitage" data-dir="up"><i></i><b>Toiture · tuiles canal</b></span>
+        <span class="tag" data-anchor="pool" data-dir="left"><i></i><b>Piscine</b></span>
+        <span class="tag" data-anchor="cour" data-dir="right"><i></i><b>Cour gravillonnée</b></span>
+        <span class="tag" data-anchor="mur" data-dir="up"><i></i><b>Mur de soutènement</b></span>
+      </div>
+    </div>
+    <div class="hero__scan" aria-hidden="true"></div>
+
+    <div class="hero__intro">
+      <p class="hero__eyebrow"><span class="dot"></span>Dessinateur · Infographiste — Sisteron, Alpes-de-Haute-Provence</p>
+      <h1 class="hero__title" aria-label="Du premier trait à la dernière lumière.">
+        <span class="line">Du premier trait</span>
+        <span class="line">à la dernière</span>
+        <span class="line"><em>lumière.</em></span>
+      </h1>
+      <p class="hero__lead">Plans, modélisation 3D et images de synthèse&nbsp;: je donne forme à votre projet de construction, d'extension ou de rénovation — avant qu'il n'existe.</p>
+      <div class="hero__cta">
+        <a class="btn btn--cream" href="#contact" data-magnetic>
+          <span class="btn__label">Parler de votre projet</span>
+          <span class="btn__icon"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="link link--light" href="#prestations">Voir les prestations</a>
+      </div>
+    </div>
+
+    <ol class="hero__stages">
+      <li class="stage" data-stage="0">
+        <span class="stage__n">01</span>
+        <h2 class="stage__t">Le trait</h2>
+        <p>Relevé, esquisse, plans cotés. Tout projet commence ici&nbsp;: une emprise, des cotes, une orientation.</p>
+      </li>
+      <li class="stage" data-stage="1">
+        <span class="stage__n">02</span>
+        <h2 class="stage__t">Le volume</h2>
+        <p>La modélisation 3D donne corps au plan. On tourne autour, on ajuste les proportions, on valide.</p>
+      </li>
+      <li class="stage" data-stage="2">
+        <span class="stage__n">03</span>
+        <h2 class="stage__t">La matière</h2>
+        <p>Tuiles, enduits, pierre, eau&nbsp;: matériaux et lumière révèlent le projet tel qu'il sera.</p>
+      </li>
+    </ol>
+
+    <div class="hero__rail" aria-hidden="true">
+      <span data-rail="0">Trait</span><i></i><span data-rail="1">Volume</span><i></i><span data-rail="2">Matière</span>
+    </div>
+    <div class="hero__compass" aria-hidden="true">
+      <svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="27"/><g class="hero__needle"><path d="M30 7l7 23H23z"/><path class="s" d="M30 53l7-23H23z"/></g></svg>
+      <span>N</span>
+    </div>
+    <div class="hero__meta" aria-hidden="true"><span>Maison individuelle avec piscine</span><span>Éch. <b class="hero__scale">1:200</b></span></div>
+    <div class="hero__scroll" aria-hidden="true"><span>Faites défiler pour construire</span><i></i></div>
+  </div>
+</section>
+
+<!-- ============ MANIFESTE ============ -->
+<section class="manifesto" data-sec="02 · Le métier">
+  <p class="label"><span>02</span>Le métier</p>
+  <p class="manifesto__text" data-scrub-words>
+    Avant les murs, il y a <em>un trait.</em> Avant le trait, une envie&nbsp;: une pièce en plus, une terrasse au soleil, une maison qui vous ressemble. Mon métier est de traduire cette envie en <em>plans précis</em> et en <em>images fidèles</em> — pour décider sereinement, déposer un dossier solide et construire sans surprise.
+  </p>
+  <p class="manifesto__sign" data-reveal="fade"><span class="hand">Pascal Casani</span><small>Dessinateur · Infographiste</small></p>
+</section>
+
+<div class="band marquee" data-marquee data-speed="70" aria-hidden="true">
+  <div class="marquee__track">
+    <div class="marquee__group">
+      <span>Plan de masse</span><i>✛</i><span>Plans de niveaux</span><i>✛</i><span>Coupes</span><i>✛</i><span>Façades</span><i>✛</i><span>Perspectives 3D</span><i>✛</i><span>Insertion paysagère</span><i>✛</i><span>Étude d'ensoleillement</span><i>✛</i>
+    </div>
+  </div>
+</div>
+
+<!-- ============ PRESTATIONS ============ -->
+<section class="svcs" id="prestations" data-sec="03 · Prestations">
+  <div class="sec-head sec-head--split">
+    <div>
+      <p class="label"><span>03</span>Prestations</p>
+      <h2 class="h2" data-reveal="words">Six façons de <em>donner forme</em> à votre projet.</h2>
+    </div>
+    <p class="sec-head__side" data-reveal="fade">Du simple plan pour une déclaration préalable à la maquette 3D complète, chaque prestation s'adapte à votre projet et à son avancement.</p>
+  </div>
+
+  <ul class="plist">
+    <li class="prow" data-img="assets/img/planches/plan_masse.webp" data-bg="paper">
+      <span class="prow__n">01</span>
+      <h3 class="prow__t">Permis de construire</h3>
+      <p class="prow__d">Plan de masse, plans de niveaux, coupes, façades, notice et insertion&nbsp;: un dossier complet, prêt à déposer en mairie.</p>
+      <span class="prow__k">Dossier</span>
+    </li>
+    <li class="prow" data-img="assets/img/planches/facade_sud.webp" data-bg="paper">
+      <span class="prow__n">02</span>
+      <h3 class="prow__t">Déclaration préalable</h3>
+      <p class="prow__d">Extension, piscine, abri, clôture, modification de façade&nbsp;: les plans et pièces graphiques qu'il vous faut.</p>
+      <span class="prow__k">Dossier</span>
+    </li>
+    <li class="prow" data-img="assets/img/stills/entree_clay.webp" data-bg="ink">
+      <span class="prow__n">03</span>
+      <h3 class="prow__t">Modélisation 3D</h3>
+      <p class="prow__d">Votre maison en volume, à l'échelle. On visite, on compare les variantes, on corrige avant le chantier.</p>
+      <span class="prow__k">3D</span>
+    </li>
+    <li class="prow" data-img="assets/img/stills/piscine_color.webp" data-bg="sand">
+      <span class="prow__n">04</span>
+      <h3 class="prow__t">Images de synthèse</h3>
+      <p class="prow__d">Perspectives réalistes, matériaux et ambiances&nbsp;: de quoi vous projeter — et convaincre.</p>
+      <span class="prow__k">Image</span>
+    </li>
+    <li class="prow" data-img="assets/img/stills/soleil.webp" data-bg="dusk">
+      <span class="prow__n">05</span>
+      <h3 class="prow__t">Étude d'ensoleillement</h3>
+      <p class="prow__d">Ombres portées heure par heure, saison par saison, pour placer une terrasse, une piscine, une baie vitrée.</p>
+      <span class="prow__k">3D</span>
+    </li>
+    <li class="prow" data-img="assets/img/planches/facade_ouest.webp" data-bg="paper">
+      <span class="prow__n">06</span>
+      <h3 class="prow__t">Relevé &amp; plans de l'existant</h3>
+      <p class="prow__d">Mesures sur place et mise au propre de votre bâti&nbsp;: la base fiable de toute rénovation.</p>
+      <span class="prow__k">Plans</span>
+    </li>
+  </ul>
+  <div class="pfloat" aria-hidden="true"><div class="pfloat__in"></div></div>
+</section>
+
+<!-- ============ PLANCHES — horizontal ============ -->
+<section class="sheets" id="planches" data-sec="04 · Les planches">
+  <div class="sheets__pin">
+    <div class="sheets__head">
+      <p class="label label--light"><span>04</span>Les planches</p>
+      <h2 class="h2" data-reveal="words">Un dossier, <em>planche après planche.</em></h2>
+      <p class="sheets__side" data-reveal="fade">Chaque pièce graphique répond à une exigence précise du dossier d'urbanisme. Ici, celles d'une maison individuelle avec piscine.</p>
+      <p class="sheets__count" aria-hidden="true"><b class="sheets__idx">01</b><span>/ 06</span></p>
+    </div>
+    <div class="sheets__viewport">
+      <div class="sheets__track">
+        <article class="sheet" data-cursor="Plan">
+          <div class="sheet__paper"><img src="assets/img/planches/plan_masse.webp" alt="Plan de masse de la maison et de sa parcelle" loading="lazy" width="1920" height="1080"></div>
+          <footer class="sheet__cart"><b>PCMI 2</b><span>Plan de masse</span><i>Éch. 1:200</i><i>Indice A</i></footer>
+        </article>
+        <article class="sheet" data-cursor="Façade">
+          <div class="sheet__paper"><img src="assets/img/planches/facade_sud.webp" alt="Façade sud" loading="lazy" width="1920" height="1080"></div>
+          <footer class="sheet__cart"><b>PCMI 5</b><span>Façade sud</span><i>Éch. 1:100</i><i>Indice A</i></footer>
+        </article>
+        <article class="sheet" data-cursor="Façade">
+          <div class="sheet__paper"><img src="assets/img/planches/facade_ouest.webp" alt="Façade ouest" loading="lazy" width="1920" height="1080"></div>
+          <footer class="sheet__cart"><b>PCMI 5</b><span>Façade ouest</span><i>Éch. 1:100</i><i>Indice A</i></footer>
+        </article>
+        <article class="sheet" data-cursor="Façade">
+          <div class="sheet__paper"><img src="assets/img/planches/facade_nord.webp" alt="Façade nord" loading="lazy" width="1920" height="1080"></div>
+          <footer class="sheet__cart"><b>PCMI 5</b><span>Façade nord</span><i>Éch. 1:100</i><i>Indice A</i></footer>
+        </article>
+        <article class="sheet" data-cursor="Façade">
+          <div class="sheet__paper"><img src="assets/img/planches/facade_est.webp" alt="Façade est" loading="lazy" width="1920" height="1080"></div>
+          <footer class="sheet__cart"><b>PCMI 5</b><span>Façade est</span><i>Éch. 1:100</i><i>Indice A</i></footer>
+        </article>
+        <article class="sheet sheet--color" data-cursor="Vue 3D">
+          <div class="sheet__paper"><img src="assets/img/stills/entree_color.webp" alt="Perspective 3D de la maison côté entrée" loading="lazy" width="1920" height="1080"></div>
+          <footer class="sheet__cart"><b>PCMI 6</b><span>Insertion · perspective</span><i>Vue 3D</i><i>Indice A</i></footer>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMPARER ============ -->
+<section class="cmp" data-sec="05 · Trait ↔ matière">
+  <div class="sec-head sec-head--center">
+    <p class="label"><span>05</span>À vous de jouer</p>
+    <h2 class="h2" data-reveal="words">Faites glisser&nbsp;: <em>du trait à la matière.</em></h2>
+  </div>
+  <div class="cmp__box" data-reveal="img" data-cursor="Glisser">
+    <div class="cmp__layer cmp__layer--b is-color">
+      <img class="cmp__clay" src="assets/img/stills/entree_clay.webp" alt="" loading="lazy" width="1920" height="1080">
+      <img class="cmp__color" src="assets/img/stills/entree_color.webp" alt="La maison rendue avec ses matériaux" loading="lazy" width="1920" height="1080">
+    </div>
+    <div class="cmp__layer cmp__layer--a">
+      <img src="assets/img/stills/entree_line.webp" alt="La même vue en dessin au trait" loading="lazy" width="1920" height="1080">
+    </div>
+    <div class="cmp__handle" role="slider" tabindex="0" aria-label="Curseur de comparaison trait / matière" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><i></i><span><svg viewBox="0 0 24 24"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg></span></div>
+    <span class="cmp__cap cmp__cap--a">Trait</span>
+    <div class="cmp__switch" role="group" aria-label="Rendu affiché à droite">
+      <button type="button" data-mode="clay">Volume</button>
+      <button type="button" data-mode="color" class="is-on">Matière</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LUMIÈRE — sun study ============ -->
+<section class="sun" id="lumiere" data-sec="06 · Étude d'ensoleillement">
+  <div class="sun__pin">
+    <div class="sun__sky" aria-hidden="true"></div>
+    <div class="film" data-film="sun" aria-hidden="true">
+      <canvas class="film__canvas" width="1600" height="900"></canvas>
+    </div>
+    <div class="sun__head">
+      <p class="label"><span>06</span>Étude d'ensoleillement</p>
+      <h2 class="h2">Une journée de soleil, <em>en un geste.</em></h2>
+      <p class="sun__lead">La maquette 3D rejoue la course du soleil sur votre terrain. On sait où tombera l'ombre du pignon en fin d'après-midi, quelle pièce prendra la lumière du matin — avant de couler la dalle.</p>
+    </div>
+    <div class="sun__ui" aria-hidden="true">
+      <div class="sun__clock"><b class="sun__h">07</b><i>h</i><b class="sun__m">52</b></div>
+      <p class="sun__phase">Matin · ombres longues</p>
+      <svg class="sun__dial" viewBox="0 0 240 132">
+        <path class="sun__arc" d="M14 118A106 106 0 0 1 226 118"/>
+        <path class="sun__arc sun__arc--on" d="M14 118A106 106 0 0 1 226 118"/>
+        <path class="sun__hz" d="M0 118H240"/>
+        <circle class="sun__disc" cx="14" cy="118" r="9"/>
+        <text x="14" y="130">Est</text><text x="226" y="130" text-anchor="end">Ouest</text>
+      </svg>
+      <p class="sun__note">Simulation · équinoxe · 44°&nbsp;N</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DÉMARCHE ============ -->
+<section class="proc" id="demarche" data-sec="07 · La démarche">
+  <div class="sec-head sec-head--center">
+    <p class="label label--light"><span>07</span>La démarche</p>
+    <h2 class="h2" data-reveal="words">Cinq étapes, <em>un seul interlocuteur.</em></h2>
+  </div>
+  <div class="proc__map">
+    <svg class="proc__svg" aria-hidden="true"><path class="proc__path"/><path class="proc__reveal"/></svg>
+    <span class="proc__pen" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M6 42l4-13L33 6l9 9-23 23z"/><path d="M28 11l9 9M10 29l9 9"/></svg></span>
+    <ol class="steps">
+      <li class="step"><span class="step__dot"></span><div class="step__card"><small>01</small><h3>Premier échange</h3><p>On parle de votre projet, de votre terrain, de vos envies et de votre budget. Sans engagement.</p></div></li>
+      <li class="step"><span class="step__dot"></span><div class="step__card"><small>02</small><h3>Relevé &amp; esquisse</h3><p>Mesures, règles d'urbanisme, premières intentions&nbsp;: le projet prend ses marques sur le papier.</p></div></li>
+      <li class="step"><span class="step__dot"></span><div class="step__card"><small>03</small><h3>Maquette 3D</h3><p>Le projet passe en volume. Vous le voyez sous tous les angles et nous l'ajustons ensemble.</p></div></li>
+      <li class="step"><span class="step__dot"></span><div class="step__card"><small>04</small><h3>Plans &amp; dossier</h3><p>Mise au net des plans, pièces graphiques et écrites&nbsp;: le dossier est prêt à être déposé.</p></div></li>
+      <li class="step"><span class="step__dot"></span><div class="step__card"><small>05</small><h3>Dépôt &amp; suivi</h3><p>Je reste à vos côtés pendant l'instruction, pour répondre aux demandes éventuelles de la mairie.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq" data-sec="08 · Questions fréquentes">
+  <div class="faq__in">
+    <div class="faq__head">
+      <p class="label"><span>08</span>Questions fréquentes</p>
+      <h2 class="h2" data-reveal="words">Avant de <em>se lancer.</em></h2>
+    </div>
+    <div class="faq__list">
+      <details class="qa" data-reveal="fade">
+        <summary><span>Dois-je passer par un architecte&nbsp;?</span><i></i></summary>
+        <p>Pas toujours. Pour une maison individuelle, le recours à un architecte n'est obligatoire qu'au-delà de 150&nbsp;m² de surface de plancher. En dessous, un dessinateur peut concevoir vos plans et constituer votre dossier.</p>
+      </details>
+      <details class="qa" data-reveal="fade">
+        <summary><span>Permis de construire ou déclaration préalable&nbsp;?</span><i></i></summary>
+        <p>Tout dépend de la nature du projet, de sa surface et des règles d'urbanisme de votre commune. On le vérifie ensemble dès le premier échange, avant de dessiner quoi que ce soit.</p>
+      </details>
+      <details class="qa" data-reveal="fade">
+        <summary><span>À quoi sert une maquette 3D si j'ai déjà des plans&nbsp;?</span><i></i></summary>
+        <p>À voir ce que les plans ne montrent pas&nbsp;: les proportions réelles, les vues depuis le jardin, l'ombre d'un pignon sur la terrasse. Corriger un volume à l'écran coûte bien moins cher que sur le chantier.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="cta" id="contact" data-sec="09 · Contact">
+  <div class="cta__in">
+    <div class="cta__txt">
+      <p class="label label--light"><span>09</span>Contact</p>
+      <h2 class="cta__title" data-reveal="words">Parlons de <em>votre projet.</em></h2>
+      <p class="cta__hand hand">Un terrain, une idée, un croquis sur un coin de table&nbsp;: c'est suffisant pour commencer.</p>
+      <div class="cta__actions">
+        <a class="btn btn--cream btn--xl" href="tel:+33628681417" data-magnetic>
+          <span class="btn__label">06 28 68 14 17</span>
+          <span class="btn__icon"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span>
+        </a>
+        <a class="btn btn--ghost btn--xl" href="mailto:contact@casdesign.fr" data-magnetic>
+          <span class="btn__label">contact@casdesign.fr</span>
+          <span class="btn__icon"><svg viewBox="0 0 24 24"><path d="M3 6h18v12H3zM3 7l9 7 9-7"/></svg></span>
+        </a>
+      </div>
+      <address class="cta__info">
+        <span>Pascal Casani — Cas'Design</span>
+        <span>149 chemin de la Haute Chaumiane<br>04200 Sisteron</span>
+      </address>
+    </div>
+    <div class="cta__card" data-tilt>
+      <img src="assets/img/carte.webp" alt="Carte de visite Cas'Design — Pascal Casani, dessinateur infographiste" loading="lazy" width="1250" height="625">
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="foot">
+  <div class="foot__top">
+    <p>Dessin de plans, permis de construire,<br>modélisation 3D et images de synthèse.</p>
+    <nav aria-label="Pied de page">
+      <a href="#prestations">Prestations</a>
+      <a href="#planches">Planches</a>
+      <a href="#lumiere">Lumière</a>
+      <a href="#demarche">Démarche</a>
+      <a href="#top">Haut de page ↑</a>
+    </nav>
+  </div>
+  <p class="foot__word" aria-hidden="true">Cas'Design</p>
+  <div class="foot__base">
+    <span>© 2026 Cas'Design · Pascal Casani</span>
+    <span>Sisteron · Alpes-de-Haute-Provence</span>
+    <span>Maquette de proposition — contenus à valider</span>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js"></script>
+<script src="assets/js/meta.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
