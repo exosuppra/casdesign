@@ -4,6 +4,11 @@ Maquette du site de **Cas'Design — Pascal Casani, dessinateur · infographiste
 
 **Version provisoire : https://exosuppra.github.io/casdesign/**
 
+| Page | Adresse |
+| --- | --- |
+| Accueil — la maquette en motion design | https://exosuppra.github.io/casdesign/ |
+| Fiche contact — la page simple atteinte par le QR code | https://exosuppra.github.io/casdesign/contact/ |
+
 > Maquette de proposition, non définitive. Textes et visuels restent à valider ; la page est marquée `noindex`.
 
 ## L'idée : « Du premier trait à la dernière lumière »
@@ -28,6 +33,7 @@ assets/js/main.js     animations et interactions
 assets/js/meta.js     plages d'images, points suivis, positions du soleil
 assets/seq/           séquences du hero et de l'ensoleillement
 assets/img/           planches, vues fixes, carte de visite
+contact/              fiche contact : page autonome (styles, polices et images embarqués), sans dépendance
 ```
 
 En local :

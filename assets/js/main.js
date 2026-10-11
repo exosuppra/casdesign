@@ -580,7 +580,7 @@
   });
   ScrollTrigger.create({ trigger: '.manifesto', start: 'top 70%', endTrigger: foot, end: 'top bottom', toggleClass: { targets: hud, className: 'is-on' } });
   $$('[data-sec]').forEach(sec => ScrollTrigger.create({ trigger: sec, start: 'top 55%', end: 'bottom 55%', onToggle: s => { if (s.isActive) hudSec.textContent = sec.dataset.sec; } }));
-  $$('.nav__links a').forEach(a => {
+  $$('.nav__links a[href^="#"]').forEach(a => {
     const target = $(a.getAttribute('href'));
     if (target) ScrollTrigger.create({ trigger: target, start: 'top 50%', end: 'bottom 50%', onToggle: s => a.classList.toggle('is-active', s.isActive) });
   });
