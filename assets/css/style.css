@@ -363,6 +363,7 @@ address { font-style: normal; }
 .prow__n { font-family: var(--f-mono); font-size: 12px; letter-spacing: .12em; color: var(--terra); }
 .prow__t { font-family: var(--f-display); font-weight: 300; font-variation-settings: "opsz" 144; font-size: clamp(1.7rem, 3.5vw, 3.5rem); line-height: 1.02; letter-spacing: -.035em; }
 .prow__d { max-width: 46ch; opacity: .76; font-size: .98rem; }
+.prow__for { display: block; margin-top: 9px; font-family: var(--f-mono); font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; opacity: .78; }
 .prow__k { justify-self: end; font-family: var(--f-mono); font-size: 10.5px; letter-spacing: .14em; text-transform: uppercase; padding: 6px 10px; border: 1px solid currentColor; border-radius: 4px; opacity: .7; }
 @media (hover: hover) and (pointer: fine) {
   .prow:hover { color: var(--line); padding-left: 18px; }
@@ -377,6 +378,7 @@ address { font-style: normal; }
 .pfloat__in img[data-bg="sand"] { background: #ece3d5; }
 .pfloat__in img[data-bg="dusk"] { background: linear-gradient(#f0c7a2, #e9d8c4); }
 .pfloat__in img[data-bg="paper"] { background: var(--paper); }
+.pfloat__in img[data-bg="night"] { background: linear-gradient(#1b202c, #2a3142); }
 
 /* ==========================================================================
    PLANCHES
