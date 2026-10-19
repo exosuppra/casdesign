@@ -96,8 +96,8 @@ h1 span, h2 span { color: var(--taupe); }
 .view__handle i { position: absolute; left: -1px; top: 0; bottom: 0; width: 2px; background: var(--ivoire); box-shadow: 0 0 14px rgba(51, 49, 47, .35); }
 .view__handle span { position: absolute; left: -25px; top: 50%; width: 50px; height: 50px; margin-top: -25px; border-radius: 50%; display: grid; place-items: center; background: var(--ivoire); color: var(--anthracite); box-shadow: 0 8px 24px rgba(51, 49, 47, .32); }
 .view__handle svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
-.view figcaption { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 4px 20px; margin-top: 12px; font-size: .76rem; color: rgba(51, 49, 47, .62); }
-.view figcaption span:first-child { font-family: var(--f-title); font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: var(--olive); font-size: .68rem; }
+.view figcaption, .duo figcaption { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 4px 20px; margin-top: 12px; font-size: .76rem; color: rgba(51, 49, 47, .62); }
+.view figcaption span:first-child, .duo figcaption span:first-child { font-family: var(--f-title); font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: var(--olive); font-size: .68rem; }
 
 /* ---------- activités ---------- */
 .acts { max-width: var(--max); margin: 0 auto; padding: clamp(46px, 9vw, 110px) var(--pad); }
@@ -109,6 +109,19 @@ h1 span, h2 span { color: var(--taupe); }
 .act p { margin-top: 7px; font-size: .96rem; color: rgba(51, 49, 47, .8); max-width: 54ch; }
 .act .act__for { margin-top: 11px; font-family: var(--f-title); font-weight: 600; font-size: .66rem; letter-spacing: .18em; text-transform: uppercase; color: var(--olive); }
 
+/* ---------- intérieurs : esquisse et rendu côte à côte (à faire glisser sur téléphone) ---------- */
+.works { max-width: var(--max); margin: 0 auto; padding: 0 var(--pad) clamp(46px, 9vw, 110px); }
+.works__list { margin-top: clamp(26px, 5vw, 54px); display: grid; gap: clamp(34px, 6vw, 60px); }
+.duo { min-width: 0; }
+.duo__row {
+  display: grid; grid-auto-flow: column; grid-auto-columns: 86%; gap: 10px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none;
+  margin: 0 calc(var(--pad) * -1); padding: 0 var(--pad); scroll-padding: 0 var(--pad);
+}
+.duo__row::-webkit-scrollbar { display: none; }
+.duo__img { position: relative; scroll-snap-align: start; aspect-ratio: 16 / 9; border-radius: 16px; overflow: hidden; background: #ece6dd; box-shadow: 0 0 0 1px rgba(51, 49, 47, .08); }
+.duo__img img { width: 100%; height: 100%; object-fit: cover; }
+.duo__tag { position: absolute; left: 10px; bottom: 10px; padding: 4px 10px; border-radius: 999px; background: rgba(245, 242, 236, .9); font-family: var(--f-title); font-weight: 600; font-size: .62rem; letter-spacing: .18em; text-transform: uppercase; }
+
 /* ---------- contact ---------- */
 .contact { padding: 0 clamp(10px, 2.4vw, 28px) clamp(10px, 2.4vw, 28px); }
 .contact__in {
@@ -118,6 +131,9 @@ h1 span, h2 span { color: var(--taupe); }
 .contact h2 span { color: var(--taupe-fonce); }
 .contact__tel { display: block; width: max-content; max-width: 100%; margin: clamp(22px, 5vw, 40px) auto 0; font-family: var(--f-title); font-weight: 500; font-size: clamp(2rem, 9.4vw, 4.4rem); letter-spacing: -.035em; line-height: 1.05; font-variant-numeric: tabular-nums; }
 .contact__mail { display: block; width: max-content; max-width: 100%; margin: 10px auto 0; font-size: clamp(1.02rem, 3.6vw, 1.3rem); background: linear-gradient(currentColor, currentColor) 0 100% / 100% 1px no-repeat; padding-bottom: 3px; }
+.contact__addr { margin-top: 26px; font-size: 1rem; line-height: 1.5; }
+.contact__addr b { display: block; margin-bottom: 4px; font-family: var(--f-title); font-weight: 600; font-size: .68rem; letter-spacing: .2em; text-transform: uppercase; color: var(--olive); }
+.contact__map { display: inline-block; margin-top: 8px; font-family: var(--f-title); font-weight: 600; font-size: .86rem; background: linear-gradient(currentColor, currentColor) 0 100% / 100% 1px no-repeat; padding-bottom: 2px; }
 .contact__note { margin-top: 18px; font-size: .9rem; color: rgba(51, 49, 47, .72); }
 .contact .actions { margin-top: 30px; }
 .social { display: flex; justify-content: center; gap: 10px; margin-top: 34px; }
@@ -169,6 +185,7 @@ h1 span, h2 span { color: var(--taupe); }
   .top__brand img { width: 66px; }
   .top__nav { display: flex; margin-left: auto; margin-right: 14px; }
   .acts__list { grid-template-columns: 1fr 1fr; column-gap: clamp(30px, 5vw, 70px); }
+  .duo__row { grid-auto-flow: row; grid-template-columns: 1fr 1fr; overflow: visible; margin: 0; padding: 0; gap: 14px; }
   .act { grid-template-columns: 54px 1fr; padding: 28px 0; }
   .dock { display: none; }
   .foot { padding-bottom: 40px; }
