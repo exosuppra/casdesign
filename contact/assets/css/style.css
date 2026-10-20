@@ -142,6 +142,8 @@ h1 span, h2 span { color: var(--taupe); }
 .social svg { width: 19px; height: 19px; fill: currentColor; }
 .social svg.is-line { fill: none; stroke: currentColor; stroke-width: 1.7; }
 .social svg.is-line circle:last-child { fill: currentColor; stroke: none; }
+.contact__review { display: inline-flex; align-items: center; gap: 8px; margin-top: 22px; font-family: var(--f-title); font-weight: 600; font-size: .86rem; background: linear-gradient(currentColor, currentColor) 0 100% / 100% 1px no-repeat; padding-bottom: 2px; }
+.contact__review svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linejoin: round; }
 
 /* ---------- pied de page ---------- */
 .foot { max-width: var(--max); margin: 0 auto; padding: 26px var(--pad) 110px; font-size: .84rem; color: rgba(51, 49, 47, .72); }
